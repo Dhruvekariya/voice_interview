@@ -1,0 +1,21 @@
+.env
+__pycache__/
+.DS_Store
+uv.lock
+.venv/
+.*
+!.env_example
+*.csv
+*.db
+*.json
+*.log
+/tests
+db
+tools for crew_ai.txt
+txt
+!requirement.txt
+!.gitignore
+*.sh
+#md folder
+md/
+*.md

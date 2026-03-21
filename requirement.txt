@@ -1,0 +1,17 @@
+asyncio-mqtt
+crewai[tools]
+dotenv
+elevenlabs
+fastapi
+firecrawl
+httpx
+openai
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+requests
+sqlalchemy
+twilio
+uvicorn
+websockets

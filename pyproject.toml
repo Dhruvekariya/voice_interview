@@ -1,0 +1,39 @@
+[project]
+name = "voice_interview"
+version = "0.1.0"
+description = "voice_interview using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "asyncio-mqtt>=0.16.2",
+    "crewai[tools]>=0.126.0",
+    "dotenv>=0.9.9",
+    "elevenlabs>=2.3.0",
+    "fastapi>=0.115.0",
+    "firecrawl>=2.7.1",
+    "httpx>=0.26.0",
+    "openai>=1.75.0",
+    "pydantic>=2.11.0",
+    "pydantic-settings>=2.9.1",
+    "python-dotenv>=1.0.0",
+    "python-multipart>=0.0.20",
+    "requests>=2.31.0",
+    "sqlalchemy>=2.0.0",
+    "twilio>=9.6.0",
+    "uvicorn>=0.24.0",
+    "websockets>=15.0.0",
+]
+
+[project.scripts]
+voice_interview = "voice_interview.main:run"
+run_crew = "voice_interview.main:run"
+train = "voice_interview.main:train"
+replay = "voice_interview.main:replay"
+test = "voice_interview.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
